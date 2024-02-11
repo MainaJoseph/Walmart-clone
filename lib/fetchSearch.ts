@@ -1,3 +1,5 @@
+import { Result } from "@/typings/searchTypings";
+
 function fetchSearch(searchTerm: string) {
   const username = process.env.OXYLABS_USERNAME;
   const password = process.env.OXYLABS_PASSWORD;
@@ -6,7 +8,7 @@ function fetchSearch(searchTerm: string) {
 
   const body = {
     source: "universal_ecommerce",
-    url: "https://www.walmart.com/ip/Adidas-Moves-Body-Spray-for-Men-2-5-Oz/710726462",
+    url: newUrl.toString(),
     geo_location: "United States",
     parse: true,
   };
@@ -31,3 +33,5 @@ function fetchSearch(searchTerm: string) {
 
   return response;
 }
+
+export default fetchSearch;

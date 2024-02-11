@@ -19,9 +19,9 @@ export interface Result {
 export interface Content {
   url: string;
   organic: Organic[];
-  tatol_results: number;
+  total_results: number;
   last_visible_page: number;
-  parse_statu_code: number;
+  parse_status_code: number; // Corrected typo in property name
 }
 
 export interface Organic {
@@ -72,7 +72,7 @@ export interface Link {
 export interface job {
   callback_url: string;
   client_id: number;
-  context: Content[];
+  context: Context[];
   created_at: string;
   domain: string;
   geo_location: null | string;
