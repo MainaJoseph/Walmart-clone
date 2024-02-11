@@ -12,12 +12,16 @@ import {
   User,
 } from "lucide-react";
 import { FormEvent } from "react";
+import { useRouter } from "next/navigation";
 
 function Header() {
+  const router = useRouter();
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const input = e.currentTarget.input.value;
+    router.push(`search?q=${input}`);
   };
 
   return (
@@ -85,7 +89,7 @@ function Header() {
         </Link>
 
         <Link
-          href={"/"}
+          href={"/basket"}
           className="flex text-white font-bold items-center text-sm"
         >
           <ShoppingCart size={20} />
