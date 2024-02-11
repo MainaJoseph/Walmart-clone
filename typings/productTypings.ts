@@ -26,10 +26,10 @@ export interface Product {
   warranty: string;
   _warnings: string[];
   variations: Variation[];
-  breedcrubms: string[];
+  breadcrumbs: string[]; // corrected property name
   description: string;
   out_of_stock: boolean;
-  specifications: Specificaton[];
+  specifications: Specification[]; // corrected interface name
   parse_status_code: number;
   price_strikethrough?: number;
 }
@@ -55,15 +55,16 @@ export interface Seller {
 export interface Variation {
   state: string;
   product_id: string;
-  selectedoptions: SelectedOPtion[];
+  selectedOptions: SelectedOption[]; // corrected property name
 }
 
-export interface SelectedOPtion {
+export interface SelectedOption {
   key: string;
   value: string;
 }
 
-export interface Specificaton {
+export interface Specification {
+  // corrected interface name
   key: string;
   value: string;
 }

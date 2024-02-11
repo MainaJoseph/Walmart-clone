@@ -4,7 +4,7 @@ async function fetchProduct(url: string) {
   const username = process.env.OXYLABS_USERNAME;
   const password = process.env.OXYLABS_PASSWORD;
 
-  const newUrl = new URL(`https://www.walmart.com/search?q=${url}`);
+  const newUrl = new URL(`https://www.walmart.com${url}`);
 
   console.log(">>>>>scraping", newUrl.toString());
 
@@ -28,14 +28,18 @@ async function fetchProduct(url: string) {
       revalidate: 60 * 60 * 24, // refresh the cache after 1 day
     },
   })
-    .then((res) => res.json())
+    .then((response) => response.json())
     .then((data) => {
       if (data.results.length === 0) return;
       const result: ProductContent = data.results[0];
 
-      return result;
+      const product = result.content;
+
+      return product;
     })
     .catch((err) => console.log(err));
 
   return response;
 }
+
+export default fetchProduct;
