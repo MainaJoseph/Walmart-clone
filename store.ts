@@ -9,7 +9,7 @@ interface CartState {
   removeFromCart: (product: Product) => void;
 }
 
-const useCartStore = create<CartState>()(
+export const useCartStore = create<CartState>()(
   devtools(
     persist(
       (set, get) => ({
