@@ -21,7 +21,6 @@ async function SearchPage({ searchParams: { q } }: Props) {
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         {results?.content.organic.map((product) => (
           <li key={product.product_id}>
-            <p>{product.title}</p>
             <Product product={product} />
           </li>
         ))}
