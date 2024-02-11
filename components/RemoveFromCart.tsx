@@ -9,7 +9,7 @@ function RemoveFromCart({ product }: { product: Product }) {
 
   const handleRemove = () => {
     console.log("Remove from cart", product.meta.sku);
-    removeFromCart(product);
+    removeFromCart(product); // Ensure removeFromCart receives the product
   };
 
   return (
