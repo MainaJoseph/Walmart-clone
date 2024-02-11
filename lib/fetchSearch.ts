@@ -21,6 +21,10 @@ function fetchSearch(searchTerm: string) {
       Authorization:
         "Basic " + Buffer.from(`${username}:${password}`).toString("base64"),
     },
+    // I will cache the information for one hour and be used inorder not use up all the oxylabs API calls
+    next: {
+      revalidate: 60 * 60,
+    },
   })
     .then((res) => res.json())
     .then((data) => {
