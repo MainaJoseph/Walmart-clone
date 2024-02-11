@@ -13,9 +13,11 @@ import {
 } from "lucide-react";
 import { FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { useCartStore } from "@/store";
 
 function Header() {
   const router = useRouter();
+  const cart = useCartStore((state) => state.cart);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
