@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import Link from "next/link";
@@ -9,22 +11,33 @@ import {
   ShoppingCart,
   User,
 } from "lucide-react";
+import { FormEvent } from "react";
 
 function Header() {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const input = e.currentTarget.input.value;
+  };
+
   return (
     <header className="flex flex-col md:flex-row bg-walmart px-10 items-center py-7 space-x-5">
       <Link href="/" className="mb-5 md:mb-0">
         <Image
-          src="https://links.papareact.com/yur"
+          src="https://i.imgur.com/5V4wehM.png"
           alt="Home"
           width={150}
           height={150}
         />
       </Link>
 
-      <form className="flex items-center bg-white rounded-full w-full flex-1">
+      <form
+        onSubmit={handleSubmit}
+        className="flex items-center bg-white rounded-full w-full flex-1"
+      >
         <input
           type="text"
+          name="input"
           placeholder="Search everything..."
           className="flex-1 px-4 rounded-l-full outline-none placeholder:text-sm"
         />
