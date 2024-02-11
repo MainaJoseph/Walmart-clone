@@ -28,6 +28,17 @@ function Product({ product }: { product: Organic }) {
       {product.badge && (
         <Badge className="w-fit absolute top-2 right-2">{product.badge}</Badge>
       )}
+
+      <p className="font-light text-sm mt-1">{product.title}</p>
+
+      {product.rating && (
+        <p className="text-yellow-500 text-xl mt-1">
+          {product.rating.ratting} ★
+          <span className="text-gray-400 ml-2 text-sm">
+            {product.rating.count}
+          </span>
+        </p>
+      )}
     </Link>
   );
 }
