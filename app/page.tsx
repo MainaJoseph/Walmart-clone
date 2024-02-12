@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="flex-1">
       <div className="grid grid-cols-1 grid-flow-row-dense md:grid-cols-4 gap-6 m-6">
         <GridOption
           title="sweet gifts for less"
