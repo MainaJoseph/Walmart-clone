@@ -8,7 +8,9 @@ This project aims to recreate the functionality and user experience of the Walma
 
 ## Features
 
-- **Intercepting & Parallel Routes**: Explore how to implement advanced routing techniques in NEXT.JS to optimize performance and user experience. With intercepting routes, you can modify or enhance route behavior, while parallel routes enable faster loading of multiple resources concurrently. Learn more about intercepting routes [here](https://nextjs.org/docs/app/building-your-application/routing/intercepting-routes).
+- **Intercepting & Parallel Routes**: Explore how to implement advanced routing techniques in NEXT.JS to optimize performance and user experience. With intercepting routes, you can modify or enhance route behavior, while parallel routes enable faster loading of multiple resources concurrently. Learn more about intercepting routes
+  [Intercepting-routes](https://nextjs.org/docs/app/building-your-application/routing/intercepting-routes).
+  [parallel-routes](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes)
 - **Oxylabs Integration**: Integrate Oxylabs for web scraping and data extraction, enabling dynamic content generation. With Oxylabs, you can easily retrieve product information, prices, and availability from various sources, enriching the user experience with real-time data. [oxylabs](https://oxylabs.io/)
 - **Shadcn Integration**: Utilize Shadcn for geo-location services and enhance user experience with location-based features. With Shadcn, you can provide personalized content, local promotions, and store recommendations based on the user's location, improving engagement and conversion rates. [shadcn/ui](https://ui.shadcn.com/docs)
 - **Zustand State Management**: Manage application state seamlessly with Zustand, a lightweight state management library for React. Zustand offers a simple yet powerful API for managing complex application state, making it easy to share data between components and synchronize state changes across the application. [zustand](https://github.com/pmndrs/zustand)
@@ -20,7 +22,7 @@ To get started with the project, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/nextjs-walmart.git
+   git clone https://github.com/MainaJoseph/Walmart-clone.git
    ```
 
 2. **Install dependencies**:
