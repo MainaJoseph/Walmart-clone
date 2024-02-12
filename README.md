@@ -65,10 +65,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 This project is licensed under the MIT License. You are free to use, modify, and distribute the code for personal or commercial purposes.
 
 ---
-
-Feel free to use this README template for your project! Let me know if there's anything else you need.
-
-```
-
-This layout should make it easier to read and follow the instructions. Let me know if you need further adjustments!
-```
