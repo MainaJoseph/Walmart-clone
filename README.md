@@ -2,9 +2,15 @@
 
 Welcome to the project repository for building a Walmart clone with NEXT.JS 14! This project utilizes intercepting & parallel routes, along with technologies like Oxylabs, Shadcn, and Zustand.
 
+![wally](https://github.com/MainaJoseph/Walmart-clone/assets/75726095/349bcc16-21d1-4824-a19e-c33b2dc9a48f)
+
+
 ## Overview
 
 This project aims to recreate the functionality and user experience of the Walmart website using the latest features of NEXT.JS version 14. We'll be exploring how to implement intercepting and parallel routes efficiently, while integrating services like Oxylabs, Shadcn for enhanced functionality, and Zustand for state management.
+
+
+![m](https://github.com/MainaJoseph/Walmart-clone/assets/75726095/30652d19-0862-42b8-bafe-db1da3404cc2)
 
 ## Features
 
